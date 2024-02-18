@@ -1,0 +1,494 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.scroll-link {
+    text-decoration: none;
+    color: white;
+    transition: color 6s ease;
+  }
+  
+.scroll-link:hover {
+    color: white;
+  }
+
+/* Esto es el Header */
+
+header{
+    width: 71px;
+    height: 71px;  
+}
+.content{
+    width: 100%;
+    margin: 4rem auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+.logo p{
+    margin-top: 11px;
+    margin-left: 30px;
+    justify-content: center;
+    float: left;
+    font-family: 'Honk', system-ui;
+    font-size: 27px;
+    color: white;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background: gray;
+}
+nav ul{
+    list-style: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    transition: 1s;
+    float: right;
+}
+nav.black ul{
+    background: gray;
+}
+nav ul li{
+    display: inline-block;
+    padding: 15px;
+}
+nav ul li a{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+
+/*Esto es el main con sus section*/
+
+main{
+    padding: 0px;
+}
+.scroll-up-icon {
+    position: fixed;
+    bottom: 20px;
+    left: auto;
+    transform: translateX(50%);
+}
+.scroll-up-icon img {
+    align-items: end;
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+/*El before es la imagen de fondo que hace el difuminado*/
+/*Todo esto es el home*/
+
+.home{
+    width: auto;
+    height: auto;
+}
+&:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('img/hombre-alto-angulo-que-trabaja-computadora-portatil_23-2150287676.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(6px);
+}
+.portada{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+}
+.portada ul{
+    font-family: 'Protest Strike', sans-serif;
+    list-style: none;
+}
+.portada ul li:nth-child(1){
+    font-size: 80px;
+    color: white;
+    position: relative;
+}
+.portada ul li:nth-child(2){
+    font-size: 80px;
+    position: relative;
+    color: white;
+}
+
+/*para tablet*/
+@media only screen and (max-width: 768px) {
+    .portada ul li:nth-child(1),
+    .portada ul li:nth-child(2) {
+        font-size: 100px;
+    }
+}
+
+/* Estilos para teléfonos */
+@media only screen and (max-width: 480px) {
+    .portada ul li:nth-child(1),
+    .portada ul li:nth-child(2) {
+        font-size: 50px;
+    }
+}
+
+/*Esto es el about me*/
+.about {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.card {
+    padding: 20px;
+    margin: 10% auto;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0.5, 3, 3, 0.5);
+}
+.card-content {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.card-content hr {
+    height: 2px;
+    background-color: blue;
+    margin: 20px 0;
+}
+
+.card-content img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.card-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-content ul li {
+    font-family: 'Protest Strike', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    text-align: center;
+    font-family: 'Protest Strike', sans-serif;
+}
+.download-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+.download-button:hover {
+    background-color: #2980b9;
+}
+/*Esto es para telefonos*/
+@media only screen and (max-width: 700px) {
+    .about{
+        margin-top: 200px;
+        width: 100%;
+    }
+    .card{
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Estilos para tablets*/
+@media only screen and (max-width: 1366px) {
+    .about{
+        margin-top: 300px;
+        height: auto;
+    }
+    .card{
+        width: 90%;
+    }
+}
+
+/*Esto son los trabajos*/
+
+.work{
+    padding: 20px;
+    height: 100vh;
+    margin-top: 0;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('img/blurry-gradient-haikei.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.work h2{
+    font-size: 50px;
+    margin-bottom: 0;
+    font-family: 'Protest Strike', sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px; 
+    justify-content: center;
+    align-items: center; 
+    height: 50vh; 
+    padding: 20px;
+}
+.card-container .card-work {
+    background-image: url(img/layered-peaks-haikei.png);
+    margin-left: 20%;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+a .card-work img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para tablets*/
+@media only screen and (max-width: 1025px) {
+    .work {
+        background-position: center;
+        height: 60%;
+    }
+
+    .work h2 {
+        font-size: 30px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        height: auto;
+    }
+
+    .card-container .card-work {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+/* Estilos para teléfonos */
+@media only screen and (max-width: 700px) {
+    .work {
+        background-size: 800vh;
+        background-position: center;
+        height: 100%;
+    }
+
+    .work h2 {
+        font-size: 20px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        height: auto;
+    }
+
+    .card-container .card-work {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+
+/*Esto es  el contact*/
+
+.contact{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+#contenedor {
+    background-image: url(img/blurry-gradient-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 50px auto;
+    overflow: auto;
+    width: 60%;
+    min-height: 200px;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.titulo h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 22px;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+}
+#formulario {
+    width: 90%;
+    min-height: 80px;
+    margin: auto;
+    padding: 0;
+    margin-top: 20px;
+}
+#formulario input[type="text"],#formulario input[type="email"] {
+    height: 25px;
+    width: 48%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #666666;
+    border-radius: 10px;
+}
+textarea {
+    width: 100%;
+}
+#formulario .boton-enviar {
+    padding: 5px;
+    width: 50%;
+    margin: 10px auto;
+    float: right;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    background: #2790d2;
+    border-radius: 10px;
+}
+
+#formulario .boton-enviar:hover {
+    background: #35a6ee;
+}
+
+#mensaje {
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* para tablets*/
+@media only screen and (max-width: 768px) {
+    #contenedor {
+        width: 100%;
+    }
+    
+    #formulario input[type="text"],
+    #formulario input[type="email"] {
+        width: 100%;
+    }
+
+    #formulario .boton-enviar {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* Estilos para teléfonos */
+@media only screen and (max-width: 480px) {
+    #contenedor {
+        width: 90%;
+    }
+}
+
+/*Esto es el fotter*/
+
+.redes{
+    padding: 20px;
+    margin-top: 0;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('img/blurry-gradient-haikei.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.redes p{
+    font-family: 'Protest Strike', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+.redes img:nth-child(2){
+    width: 30px;
+    margin-left: 807px;
+    display: inline-flex;
+}
+.redes img{
+    width: 30px;
+    margin: 10px;
+}
+/* Estilos para teléfonos */
+@media only screen and (max-width: 480px) {
+    .redes img:nth-child(2) {
+        margin-left: 60px;
+        width: 30px;
+    }
+    .redes img{
+        margin-left: 100px;
+        margin: 20px;
+    }
+}
+/* para tablets vertical*/
+@media only screen and (max-width: 1024px) {
+    .redes img:nth-child(2) {
+        margin-left: 350px;
+        width: 30px;
+    }
+    .redes img{
+        margin-left: 100px;
+        margin: 20px;
+    }
+}
+/* para tablets Horizontal*/
+@media only screen and (max-width: 1366px) {
+    .redes img:nth-child(2) {
+        margin-left: 525px;
+        width: 30px;
+    }
+    .redes img{
+        margin-left: 100px;
+        margin: 20px;
+    }
+}
