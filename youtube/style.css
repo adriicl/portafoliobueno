@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'YouTube Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+.barra-lateral {
+    display: flex;
+}
+
+.barra {
+    width: 230px;
+    padding-top: 5px;
+    height: 750px;
+    color: white;
+    margin-top: 5px;
+}
+
+.barra p{
+    font-size: 20px;
+    text-align: left;
+    margin-top: -20px;
+    margin-left: 15px;
+    font: white;
+}
+
+.barra ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.barra ul li {
+    padding: 8px;                                                                                                                                                           
+    margin-top: 0;
+}
+.barra ul li:hover{
+    box-shadow: 1px 1px 6px 1px gray;
+    border-radius: 20px;
+}
+.barra ul li:nth-child(4){
+    font-weight: 500;
+}
+
+.barra ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+.barra p .iconyt{
+    color: red;
+}
+
+header{
+    display: flex;
+    margin-left: 260px;
+    text-align: center;
+    margin-top: -754px;
+}
+.buscador {
+    display: flex;
+    align-items: center;
+}
+
+#texto-buscador {
+    padding: 10px;
+    font-size: 16px;
+    border: 8px solid color;
+    border-color: gray;
+    border-radius: 20px;
+    background-color: rgba(41, 41, 41, 0);
+}
+
+#buscar-icono {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: gray;
+}
+
+#buscar-icono img {
+    width: 20px;
+    height: 20px;
+}
+::placeholder{
+    color: rgb(255, 255, 255);
+}
+.cabezera{
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 350px;
+}
+.etiquetas{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 260px;
+    align-content: center;
+}
+.eti{
+    color: azure;
+    float: left;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid;
+    text-align: center;
+    
+}
+.eti:hover{
+    box-shadow: 0 1px 6px 0 #d0d0d7;
+}
+.videos{
+    background-color: blue;
+}
+.caja{
+    color: azure;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    float: left;
+    margin-left: 270px;
+    margin-top: 100px;
+}
+img{
+    border-radius: 20px;
+}
+

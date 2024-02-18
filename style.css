@@ -152,7 +152,7 @@ main{
     font-family: Arial, sans-serif;
     height: 100vh;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 100px;
 }
 
 .card {
@@ -179,7 +179,7 @@ h2 {
 }
 
 .card-content img {
-    width: 100%;
+    width: 30%;
     max-width: 500px;
     margin-bottom: 20px;
 }
@@ -241,9 +241,9 @@ h2 {
 /*Esto son los trabajos*/
 
 .work{
+    margin-top: 500px;
     padding: 20px;
     height: 100vh;
-    margin-top: 0;
     margin: 0;
     top: 0;
     right: 0;
@@ -274,7 +274,7 @@ h2 {
     padding: 20px;
 }
 .card-container .card-work {
-    background-image: url(img/layered-peaks-haikei.png);
+    background-color: beige;
     margin-left: 20%;
     align-items: center;
     width: 50%;
@@ -452,7 +452,7 @@ textarea {
 }
 .redes img:nth-child(2){
     width: 30px;
-    margin-left: 807px;
+    margin-left: 615px;
     display: inline-flex;
 }
 .redes img{
@@ -470,21 +470,10 @@ textarea {
         margin: 20px;
     }
 }
-/* para tablets vertical*/
+/* para tablets*/
 @media only screen and (max-width: 1024px) {
     .redes img:nth-child(2) {
         margin-left: 350px;
-        width: 30px;
-    }
-    .redes img{
-        margin-left: 100px;
-        margin: 20px;
-    }
-}
-/* para tablets Horizontal*/
-@media only screen and (max-width: 1366px) {
-    .redes img:nth-child(2) {
-        margin-left: 525px;
         width: 30px;
     }
     .redes img{
