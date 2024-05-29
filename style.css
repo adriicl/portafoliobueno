@@ -1,175 +1,241 @@
-html{
+html {
     margin: 0;
     padding: 0;
     width: 100%;
 }
-body{
-    font-family: sans-serif;
+
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
+
+/* Estilos del modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header.dark-mode {
+    background: #333333;
+}
+
+nav.dark-mode ul li a {
+    color: #ffffff;
+}
+
+.card.dark-mode, .card-work.dark-mode, .colorful-form.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.scroll-link.dark-mode:hover {
+    color: #bbb;
+}
+
+/* Add styles for main and footer elements */
+main.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+footer.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.redes.dark-mode p {
+    color: #ffffff;
+}
+
+.redes.dark-mode img {
+    filter: invert(1);
+}
+
+main.dark-mode label{
+    color: white;
+}
+
+main.dark-mode p {
+    color: white;
+}
+
+main.dark-mode h3 {
+    color: white;
+}
+
+
 .scroll-link {
     text-decoration: none;
     color: white;
-    transition: color 6s ease;
-  }
-  
+    transition: color 0.3s ease;
+}
+
 .scroll-link:hover {
-    color: white;
-  }
+    color: #ddd;
+}
 
-/* Esto es el Header */
-
-header{
-    width: 71px;
+header {
+    width: 100%;
     height: 71px;  
 }
-.content{
-    width: 100%;
-    margin: 4rem auto;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
-}
-.logo p{
-    margin-top: 11px;
-    margin-left: 30px;
-    justify-content: center;
+
+.logo p {
+    margin: 0;
+    padding: 20px;
     float: left;
     font-family: 'Honk', system-ui;
     font-size: 27px;
     color: white;
 }
-nav{
+
+nav {
     position: fixed;
     width: 100%;
     background: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-nav ul{
+
+nav ul {
     list-style: none;
-    color: white;
     padding: 0;
     margin: 0;
-    transition: 1s;
-    float: right;
+    display: flex;
 }
-nav.black ul{
-    background: gray;
-}
-nav ul li{
-    display: inline-block;
+
+nav ul li {
     padding: 15px;
 }
-nav ul li a{
+
+nav ul li a {
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: white;
 }
 
-/*Esto es el main con sus section*/
-
-main{
-    padding: 0px;
-}
 .scroll-up-icon {
     position: fixed;
     bottom: 20px;
-    left: auto;
-    transform: translateX(50%);
-}
-.scroll-up-icon img {
-    align-items: end;
+    right: 20px;
     width: 40px;
-    height: auto;
+    height: 40px;
     cursor: pointer;
 }
 
-/*El before es la imagen de fondo que hace el difuminado*/
-/*Todo esto es el home*/
-
-.home{
-    width: auto;
+.scroll-up-icon img {
+    width: 100%;
     height: auto;
 }
-&:before {
-    content: "";
+
+#boton-up {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: fixed;
+  }
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  #boton-up:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(181, 160, 255);
+    align-items: center;
+  }
+  
+  #boton-up:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+  }
+  
+  #boton-up::before {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+  }
+  
+  #boton-up:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+  }
+  
+
+ 
+  
+
+.home {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url('img/hombre-alto-angulo-que-trabaja-computadora-portatil_23-2150287676.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(6px);
 }
-.portada{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    text-align: center;
-}
-.portada ul{
+
+.portada ul {
     font-family: 'Protest Strike', sans-serif;
     list-style: none;
-}
-.portada ul li:nth-child(1){
-    font-size: 80px;
-    color: white;
-    position: relative;
-}
-.portada ul li:nth-child(2){
-    font-size: 80px;
-    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
     color: white;
 }
 
-/*para tablet*/
-@media only screen and (max-width: 768px) {
-    .portada ul li:nth-child(1),
-    .portada ul li:nth-child(2) {
-        font-size: 100px;
-    }
+.portada ul li {
+    font-size: 4vw;
 }
 
-/* Estilos para teléfonos */
-@media only screen and (max-width: 480px) {
-    .portada ul li:nth-child(1),
-    .portada ul li:nth-child(2) {
-        font-size: 50px;
-    }
-}
-
-/*Esto es el about me*/
 .about {
     font-family: Arial, sans-serif;
-    height: 100vh;
+    padding: 50px 0;
     text-align: center;
-    margin-bottom: 100px;
 }
 
 .card {
     padding: 20px;
-    margin: 10% auto;
-    width: 50%;
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0.5, 3, 3, 0.5);
 }
+
 .card-content {
     padding: 20px;
-}
-
-h2 {
-    text-align: center;
-    margin-top: 0;
 }
 
 .card-content hr {
@@ -182,11 +248,13 @@ h2 {
     width: 30%;
     max-width: 500px;
     margin-bottom: 20px;
+    border-radius: 50%;
 }
 
 .card-content ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .card-content ul li {
@@ -199,285 +267,246 @@ h2 {
     text-align: center;
     font-family: 'Protest Strike', sans-serif;
 }
-.download-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    background-color: #3498db;
-    color: #fff;
-    border-radius: 5px;
+
+#boton-curri {
+    outline: none;
     cursor: pointer;
-    transition:0.3s;
-}
-
-.download-button:hover {
-    background-color: #2980b9;
-}
-/*Esto es para telefonos*/
-@media only screen and (max-width: 700px) {
-    .about{
-        margin-top: 200px;
-        width: 100%;
-    }
-    .card{
-        width: 90%;
-        height: auto;
-    }
-}
-
-/* Estilos para tablets*/
-@media only screen and (max-width: 1366px) {
-    .about{
-        margin-top: 300px;
-        height: auto;
-    }
-    .card{
-        width: 90%;
-    }
-}
-
-/*Esto son los trabajos*/
-
-.work{
-    margin-top: 500px;
-    padding: 20px;
-    height: 100vh;
+    border: none;
+    padding: 0.9rem 2rem;
     margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #66ff66;
+    color: ghostwhite;
+   }
+   
+   #boton-curri span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+   }
+   
+   #boton-curri:hover span {
+    color: black;
+   }
+   
+   #boton-curri::before,
+   #boton-curri::after {
+    position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   #boton-curri::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   #boton-curri:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+   
+.work {
+    padding: 50px 20px;
+    text-align: center;
     background-image: url('img/blurry-gradient-haikei.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.work h2{
-    font-size: 50px;
-    margin-bottom: 0;
+
+.work h2 {
+    font-size: 3vw;
     font-family: 'Protest Strike', sans-serif;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
 }
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px; 
+    gap: 20px;
     justify-content: center;
-    align-items: center; 
-    height: 50vh; 
-    padding: 20px;
-}
-.card-container .card-work {
-    background-color: beige;
-    margin-left: 20%;
     align-items: center;
-    width: 50%;
-    margin-bottom: 0;
+}
+
+.card-work {
+    background-color: #fff;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-a .card-work img{
-    width: 100%;
-    height: 100%;
-}
-
-/* Estilos para tablets*/
-@media only screen and (max-width: 1025px) {
-    .work {
-        background-position: center;
-        height: 60%;
-    }
-
-    .work h2 {
-        font-size: 30px;
-    }
-
-    .card-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        height: auto;
-    }
-
-    .card-container .card-work {
-        width: 80%;
-        margin-left: 10%;
-    }
-}
-
-/* Estilos para teléfonos */
-@media only screen and (max-width: 700px) {
-    .work {
-        background-size: 800vh;
-        background-position: center;
-        height: 100%;
-    }
-
-    .work h2 {
-        font-size: 20px;
-    }
-
-    .card-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        height: auto;
-    }
-
-    .card-container .card-work {
-        width: 80%;
-        margin-left: 10%;
-    }
-}
-
-
-/*Esto es  el contact*/
-
-.contact{
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    line-height: 1.5em;
-}
-.contenedor {
-    background-image: url(img/blurry-gradient-haikei.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 50px auto;
-    overflow: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 60%;
-    min-height: 200px;
-    border-radius: 12px;
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -o-border-radius: 12px;
-}
-.titulo h1 {
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    font-size: 22px;
-    padding: 15px;
-    border-bottom: 1px solid #fff;
-}
-.formulario {
-    width: 90%;
-    min-height: 80px;
     margin: auto;
-    padding: 0;
-    margin-top: 20px;
 }
-.formulario input[type="text"],.formulario input[type="email"] {
-    height: 25px;
-    width: 48%;
-    padding: 5px;
-    margin-bottom: 20px;
-    border: 1px solid #666666;
-    border-radius: 10px;
+
+.card-work:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-textarea {
+
+.card-work img {
     width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
-.formulario .boton-enviar {
-    padding: 5px;
-    width: 50%;
-    margin: 10px auto;
-    float: right;
-    border: 0;
-    color: #fff;
+
+.card-work p {
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    background: #2790d2;
-    border-radius: 10px;
+    color: #555;
+    line-height: 1.5;
+    margin: 10px 0;
 }
 
-.formulario .boton-enviar:hover {
-    background: #35a6ee;
+.card-work h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
 }
 
-.mensaje {
-    box-sizing: border-box;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-/* para tablets*/
 @media only screen and (max-width: 768px) {
-    .contenedor {
-        width: 100%;
-    }
-    
-    .formulario input[type="text"],
-    .formulario input[type="email"] {
-        width: 100%;
+    .work h2 {
+        font-size: 5vw;
     }
 
-    .formulario .boton-enviar {
-        width: 100%;
-        float: none;
+    .card-container {
+        grid-template-columns: 1fr;
     }
-}
 
-/* Estilos para teléfonos */
-@media only screen and (max-width: 480px) {
-    .contenedor {
-        width: 90%;
+    .card-work {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .card-work p, .card-work h3 {
+        font-size: 14px;
     }
 }
 
-/*Esto es el fotter*/
 
-.redes{
+.contact {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.colorful-form {
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
-    margin-top: 0;
-    margin: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+
+textarea.form-input {
+    height: 100px;
+}
+
+.form-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6f69;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #ff5f59;
+}
+
+.redes {
+    padding: 20px;
+    text-align: center;
     background-image: url('img/blurry-gradient-haikei.svg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
-.redes p{
+
+.redes p {
     font-family: 'Protest Strike', sans-serif;
-    text-align: center;
     font-size: 30px;
 }
-.redes img:nth-child(2){
-    width: 30px;
-    margin-left: 615px;
-    display: inline-flex;
-}
-.redes img{
+
+.redes img {
     width: 30px;
     margin: 10px;
+    display: inline-block;
 }
-/* Estilos para teléfonos */
+
+/* Responsive adjustments */
+
+@media only screen and (max-width: 768px) {
+    .portada ul li {
+        font-size: 6vw;
+    }
+
+    .card-content img {
+        width: 50%;
+    }
+
+    .work h2 {
+        font-size: 5vw;
+    }
+
+    .redes p {
+        font-size: 20px;
+    }
+}
+
 @media only screen and (max-width: 480px) {
-    .redes img:nth-child(2) {
-        margin-left: 60px;
-        width: 30px;
+    .portada ul li {
+        font-size: 8vw;
     }
-    .redes img{
-        margin-left: 100px;
-        margin: 20px;
+
+    .card {
+        width: 90%;
     }
-}
-/* para tablets*/
-@media only screen and (max-width: 1024px) {
-    .redes img:nth-child(2) {
-        margin-left: 350px;
-        width: 30px;
-    }
-    .redes img{
-        margin-left: 100px;
-        margin: 20px;
+
+    .redes img {
+        margin: 5px;
     }
 }
