@@ -1,3 +1,4 @@
+// Script para el modo oscuro
 document.getElementById('dark-mode-toggle').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
     document.querySelector('header').classList.toggle('dark-mode');
@@ -32,4 +33,24 @@ document.getElementById('dark-mode-toggle').addEventListener('click', function()
 
     let redes = document.querySelector('.redes');
     redes.classList.toggle('dark-mode');
+});
+
+// Script para el scroll
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll(".scroll-link");
+
+    for (const link of links) {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            const targetID = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetID);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: "smooth"
+                });
+            }
+        });
+    }
 });
