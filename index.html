@@ -71,59 +71,76 @@
         </section>
         <section class="work" id="work">
             <h2>WORKS:</h2>
+        
             <div class="work-container">
-                <div class="card-work">
-                    <a href="youtube/index.html" target="_blank">
-                        <img src="img/youtube.jpg" alt="proyecto1">
-                        <div class="card-content">
-                            <h3>Proyect Youtube</h3>
-                            <p>Descripción breve del proyecto de Youtube.</p>
+                <div class="myCard">
+                    <div class="innerCard">
+                        <div class="frontSide">
+                            <p class="title">Proyect Youtube</p>
+                            <p>This is a recreation of the YouTube page.(Hover me)</p>
                         </div>
-                    </a>
+                        <div class="backSide">
+                            <a href="youtube/index.html" target="_blank">
+                                <img src="img/youtube.jpg" alt="proyecto1">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-work">
-                    <a href="google/google.html" target="_blank">
-                        <img src="img/google.jpg" alt="proyecto2">
-                        <div class="card-content">
-                            <h3>Proyect Google</h3>
-                            <p>Descripción breve del proyecto de Google.</p>
+                <div class="myCard">
+                    <div class="innerCard">
+                        <div class="frontSide">
+                            <p class="title">Proyect Briefcase</p>
+                            <p>This was the first portfolio I made.(Hover me)</p>
                         </div>
-                    </a>
+                        <div class="backSide">
+                            <a href="portafolio/index.html" target="_blank">
+                                <img src="img/portafolio1.jpg" alt="proyecto1">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-work">
-                    <a href="portafolio/about.html" target="_blank">
-                        <img src="img/portafolio1.jpg" alt="proyecto3">
-                        <div class="card-content">
-                            <h3>Proyect Portafolio1</h3>
-                            <p>Descripción breve del proyecto de portafolio.</p>
+                <div class="myCard">
+                    <div class="innerCard">
+                        <div class="frontSide">
+                            <p class="title">Proyect Avatar</p>
+                            <p>This is a project about the design of a card.(Hover me)</p>
                         </div>
-                    </a>
+                        <div class="backSide">
+                            <a href="css/index.html" target="_blank">
+                                <img src="img/avatar.jpg" alt="proyecto1">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-work">
-                    <a href="css/index.html" target="_blank">
-                        <img src="img/avatar.jpg" alt="proyecto4">
-                        <div class="card-content">
-                            <h3>Proyect Avatar</h3>
-                            <p>Descripción breve del proyecto de Avatar.</p>
+                <div class="myCard">
+                    <div class="innerCard">
+                        <div class="frontSide">
+                            <p class="title">Proyect Google</p>
+                            <p>This is a recreation of the Google page.(Hover me)</p>
                         </div>
-                    </a>
+                        <div class="backSide">
+                            <a href="google/google.html" target="_blank">
+                                <img src="img/google.jpg" alt="proyecto1">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         
         <section class="contact" id="contact">
-            <form class="colorful-form">
+            <form action="form.php" method="post" class="colorful-form">
                 <div class="form-group">
-                    <label class="form-label" for="name">Name:</label>
-                    <input required="" placeholder="Enter your name" class="form-input" type="text">
+                    <label class="form-label">Name:</label>
+                    <input required name="name" placeholder="Enter your name" class="form-input" type="text">
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="email">Email:</label>
-                    <input required="" placeholder="Enter your email" class="form-input" name="email" id="email" type="email">
+                    <label class="form-label">Email:</label>
+                    <input required placeholder="Enter your email" class="form-input" name="email" id="email" type="email">
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="message">Message:</label>
-                    <textarea required="" placeholder="Enter your message" class="form-input" name="message" id="message"></textarea>
+                    <label class="form-label">Message:</label>
+                    <textarea required placeholder="Enter your message" class="form-input" name="message" id="message"></textarea>
                 </div>
                 <button class="form-button" type="submit">Submit</button>
             </form>
@@ -138,6 +155,6 @@
             <a href="https://github.com/adriicl/portafoliobueno.git" target="_blank"><img src="img/github.svg" alt="github"></a>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
 </body>
 </html>
